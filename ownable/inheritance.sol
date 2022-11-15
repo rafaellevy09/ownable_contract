@@ -61,7 +61,7 @@ pragma solidity ^0.8.7;
     }
 
     function transferOwnership(address newowner) public onlyOwner {
-        require(newowner != address(0), "new owner is the zero address");
+        require(newowner != address(0), "new owner is the zero address!");
         emit ownershipTransferred(ContractOwner, newowner);
         ContractOwner = newowner;
     }

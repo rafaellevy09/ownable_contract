@@ -13,7 +13,7 @@ contract ModifierTest {
     }
 
     modifier onlyOwner() {
-        require(msg.sender == ContractOwner, "You are not the owner");
+        require(msg.sender == ContractOwner, "You are not the owner!");
         _;
     }
 

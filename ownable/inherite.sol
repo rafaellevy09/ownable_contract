@@ -21,7 +21,7 @@ function addUser (address newuser) public virtual override onlyOwner{
     }
 
  function renounceOwnership() public virtual override onlyOwner {
-        revert("can't renounceOwnership here");
+        revert("can't renounceOwnership here!");
  }
 
 }
